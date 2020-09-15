@@ -33,7 +33,7 @@ public class LogController {
 	}
 
 	@RequestMapping(value = "/list-products", method = RequestMethod.GET)
-	public Response searchKeyword(@RequestBody String key) throws JsonProcessingException {
+	public Response listProducts(@RequestBody String key) throws JsonProcessingException {
 		Response response = logService.getProductList(key);
 		return response;
 	}
